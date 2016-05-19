@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>
     </title>
-    <script src="js/jquery-1.12.3.min%20(1).js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-   <div id="admin">
+   <div id="añadir">
        <header><h2>Añadir etiqueta</h2></header>
        <form action="">
           <label for="">nombre</label>
@@ -19,6 +19,57 @@
            <input type="submit" id="add" value="add">
        </form>
    </div>
+   <div id="efectos">
+       <div class="form">
+           <label for="">etiqueta</label>
+           <select name="" id="selectetiqueta">
+               <option value="div">Div</option>
+               <option value="span">span</option>
+               <option value="a">a</option>
+           </select>
+           <select name="" id="effects1">
+               <option value="slideDown">
+                   slideDown
+               </option>
+                <option value="slideUp">
+                   slideUp
+               </option>
+                <option value="fadeIn">
+                    fadeIn
+                </option>
+                <option value="fadeOut">
+                    fadeOut
+                </option>
+                <option value="hide">hide</option>
+                <option value="show">show</option>
+           </select>
+           <input type="submit" id="editaretiqueta" value="editar">
+       </div>
+       <div class="form">
+           <form action="">
+               <label for="">Busqueda por id</label>
+               <input type="text" id="selectId">
+               <select name="" id="effects2">
+               <option value="slideDown">
+                   slideDown
+               </option>
+                <option value="slideUp">
+                   slideUp
+               </option>
+                <option value="fadeIn">
+                    fadeIn
+                </option>
+                <option value="fadeOut">
+                    fadeOut
+                </option>
+                <option value="hide">hide</option>
+                <option value="show">show</option>
+           </select>
+           <input type="submit" id="editarid" value="editar">
+           </form>
+       </div>
+   </div>
+   
    <div id="vista">
        
    </div>
