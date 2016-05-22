@@ -30,11 +30,14 @@
             var etiqueta = $('#nombre')[0].value; 
             var clase = $('#addclass')[0].value;
             var atributo = $('#attr')[0].value
+            
             var elemento = $("<"+etiqueta+"></"+etiqueta+">");
             var id = $('#id')[0].value;
             
             elemento.addClass(clase);
-           elemento.attr("id",id); elemento.attr(atributo,"hola");
+            
+          if(id.empty){ elemento.attr("id",id);}
+           if(atributo.empty){ elemento.attr(atributo,"hola");};
             elemento.text("hola");
             elemento.appendTo("#vista");
         })
